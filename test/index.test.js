@@ -27,3 +27,11 @@ test(file+'Transform Anita url into canonical', function(t) {
   t.equal(result, expected, "Anita's profile url transformed");
   t.end();
 });
+
+test(file+'Test for Benji', function(t) {
+  var polish   = 'https://uk.linkedin.com/pub/benjamin-lees/58/75/162';
+  var result   = transform(polish);
+  var expected = 'https://www.linkedin.com/in/benjamin-lees-16207558';
+  t.equal(result, expected, "Benji's profile url transformed");
+  t.end();
+});
