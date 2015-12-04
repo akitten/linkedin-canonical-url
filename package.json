@@ -1,0 +1,34 @@
+{
+  "name": "linkedin-canonical-url",
+  "version": "1.0.0",
+  "description": "Get the \"true\" version of a linkedin url for any profile",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "nodemon test/followers.js",
+    "quick": "./node_modules/tape/bin/tape ./test/*.js",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/tape/bin/tape ./test/*.js | node_modules/tap-spec/bin/cmd.js",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/tape/bin/tape ./test/*.js && istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "jshint": "jshint -c .jshintrc --exclude-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akitten/linkedin-canonical-url.git"
+  },
+  "keywords": [
+    "url",
+    "canonical"
+  ],
+  "author": "",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/akitten/linkedin-canonical-url/issues"
+  },
+  "homepage": "https://github.com/akitten/linkedin-canonical-url#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.0",
+    "nodemon": "^1.8.1",
+    "pre-commit": "^1.1.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.2.2"
+  }
+}
