@@ -26,7 +26,7 @@ https://sy.linkedin.com/pub/krzysztof-marzec/a7/576/b50?trk=biz_employee_pub
 Which gets re-directed to:  
 https://www.linkedin.com/in/krzysztof-marzec-b50576a7
 
-*thankfully* there *is* a ***pattern***...
+*Thankfully* there *is* a ***pattern*** so we can transform the urls.
 
 ## How?
 
@@ -44,6 +44,10 @@ console.log('Transformed: ', canonical_url);
 // https://www.linkedin.com/in/krzysztof-marzec-b50576a7
 ```
 
-That's it.
+That's it.  
 Now each time you see a LinkedIn URL pass it through this transformer
 to ensure that you are getting the ***canonical*** version.
+
+> **Note**: the transformer is written to be human-readable.
+If you run into a "*performance-bottleneck*" using this code,
+please feel free to submit a PR to make it faster.
