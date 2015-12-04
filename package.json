@@ -1,6 +1,6 @@
 {
   "name": "linkedin-canonical-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the \"true\" version of a linkedin url for any profile",
   "main": "lib/index.js",
   "scripts": {
@@ -26,8 +26,6 @@
   "homepage": "https://github.com/akitten/linkedin-canonical-url#readme",
   "devDependencies": {
     "istanbul": "^0.4.0",
-    "nodemon": "^1.8.1",
-    "pre-commit": "^1.1.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.2.2"
   }
