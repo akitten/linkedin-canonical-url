@@ -12,16 +12,18 @@ test(file+'Transform polish url into wwww', function(t) {
   t.end();
 });
 
-// test(file+'Transform abdi url into canonical', function(t) {
-//   var polish   = 'https://sy.linkedin.com/pub/krzysztof-marzec/a7/576/b50?trk=biz_employee_pub';
-//   var result   = transform(polish);
-//   var expected = 'https://www.linkedin.com/in/krzysztof-marzec-b50576a7';
-//   t.equal(result, expected, "url was successfully transformed");
-//   t.end();
-// });
-// https://uk.linkedin.com/pub/abdi-ahmed/100/384/6b0
-// https://www.linkedin.com/in/abdi-ahmed-6b0384100
+test(file+'Transform abdi url into canonical', function(t) {
+  var polish   = 'https://uk.linkedin.com/pub/abdi-ahmed/100/384/6b0';
+  var result   = transform(polish);
+  var expected = 'https://www.linkedin.com/in/abdi-ahmed-6b0384100';
+  t.equal(result, expected, "abdi's profile url transformed");
+  t.end();
+});
 
-
-// https://uk.linkedin.com/in/anitaczapla
-// https://www.linkedin.com/in/anitaczapla
+test(file+'Transform abdi url into canonical', function(t) {
+  var polish   = 'https://uk.linkedin.com/in/anitaczapla';
+  var result   = transform(polish);
+  var expected = 'https://www.linkedin.com/in/anitaczapla';
+  t.equal(result, expected, "abdi's profile url transformed");
+  t.end();
+});
