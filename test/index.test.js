@@ -67,3 +67,11 @@ test(file+'Test for Hanz Meyer (part 5 length is 1)', function(t) {
   t.equal(result, expected, "Hanz's profile url transformed");
   t.end();
 });
+
+test(file+'Test for Raoul (url finishes with /)', function(t) {
+  var url   = 'https://www.linkedin.com/in/repejota/';
+  var result   = transform(url);
+  var expected = 'https://www.linkedin.com/in/repejota';
+  t.equal(result, expected, "Raoul's profile url transformed");
+  t.end();
+});
