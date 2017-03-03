@@ -1,6 +1,6 @@
 {
   "name": "linkedin-canonical-url",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Get the \"true\" version of a linkedin url for any profile",
   "main": "lib/index.js",
   "scripts": {
