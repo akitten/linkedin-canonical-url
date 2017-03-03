@@ -28,6 +28,14 @@ test(file+'Transform Anita url into canonical', function(t) {
   t.end();
 });
 
+test(file+'Transform Anita url into canonical even if passed as upper case', function(t) {
+  var url   = 'https://uk.LINKEDIN.com/in/anitaczapla';
+  var result   = transform(url);
+  var expected = 'https://www.linkedin.com/in/anitaczapla';
+  t.equal(result, expected, "Anita's profile url transformed");
+  t.end();
+});
+
 test(file+'Test for Benji', function(t) {
   var url   = 'https://uk.linkedin.com/pub/benjamin-lees/58/75/162';
   var result   = transform(url);
@@ -47,7 +55,7 @@ test(file+'Test for Jorge Feldmann (trailing language)', function(t) {
 test(file+'Test for Eugene Vegner (parts 4 length is 3)', function(t) {
   var url   = 'https://ua.linkedin.com/pub/eugene-vegner-%EF%A3%BF/34/4b0/885';
   var result   = transform(url);
-  var expected = 'https://www.linkedin.com/in/eugene-vegner-%EF%A3%BF-8854b034';
+  var expected = 'https://www.linkedin.com/in/eugene-vegner-%ef%a3%bf-8854b034';
   t.equal(result, expected, "Eugene's profile url transformed");
   t.end();
 });
